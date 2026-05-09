@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    color: white;
+    text-align: center;
+
+    background: radial-gradient(circle at top left, #0f2a10, #021705);
+}
+h2 {
+  text-align: center;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.grid img {
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.grid img:hover {
+  transform: scale(1.05);
+}
+.Home-btn {
+  margin: 30px auto;
+  display: inline-block;
+  padding: 12px 25px;
+  background: #38f868;
+  color: black;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
