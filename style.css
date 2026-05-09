@@ -321,6 +321,7 @@ body::before {
     }
     .about-image {
         width: 200px;
+                margin-left: -80px;
     }
 }
 /* Mobile styles */
@@ -364,8 +365,8 @@ body::before {
     }
 
     .hero-image img {
-        width: 300px;
-        margin-top: 30px;
+        width: 420px;
+        margin-top: 15px;
     }
 }
 
