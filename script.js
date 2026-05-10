@@ -68,3 +68,5 @@ Details: ${details}`;
 
   closeOrder();
 }
+
+content/projects/*.md */
