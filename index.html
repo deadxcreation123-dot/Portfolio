@@ -230,6 +230,30 @@ fetch("/projects.json")
     document.getElementById("projects").innerHTML = html;
   });
 </script>
+<div id="projects"></div>
+
+<script>
+fetch("projects.json")
+  .then(res => res.json())
+  .then(data => {
+    let html = "";
+
+    data.forEach(p => {
+      html += `
+        <div class="card">
+          <img src="${p.thumbnail}">
+          <h3>${p.title}</h3>
+          <p>${p.short}</p>
+          <a href="project.html?slug=${p.slug}">
+            <button>See More</button>
+          </a>
+        </div>
+      `;
+    });
+
+    document.getElementById("projects").innerHTML = html;
+  });
+</script>
 </div>
 
     </div>

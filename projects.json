@@ -1,0 +1,9 @@
+[
+  {
+    "title": "Project 1",
+    "thumbnail": "/images/p1.jpg",
+    "short": "Test project",
+    "slug": "project-1",
+    "samples": ["/images/p1-1.jpg", "/images/p1-2.jpg"]
+  }
+]
