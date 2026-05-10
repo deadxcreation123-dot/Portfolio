@@ -1,6 +1,7 @@
 backend:
   name: git-gateway
   branch: main
+  identity_url: https://dxc.netlify.app/.netlify/identity
 
 media_folder: "images"
 public_folder: "/images"
