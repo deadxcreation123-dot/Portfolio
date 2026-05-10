@@ -62,11 +62,9 @@ Designs: ${designs}
 Colors: ${colors}
 Details: ${details}`;
 
-  let phone = "947XXXXXXXX"; // ඔයාගේ number
+  let phone = "94770759088"; // ඔයාගේ number
 
   window.open("https://wa.me/" + phone + "?text=" + encodeURIComponent(message), "_blank");
 
   closeOrder();
 }
-
-content/projects/*.md */
