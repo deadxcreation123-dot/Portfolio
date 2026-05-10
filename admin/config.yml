@@ -1,7 +1,7 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: deadxcreation123-dot/Portfolio
   branch: main
-  identity_url: https://dxc.netlify.app/.netlify/identity
 
 media_folder: "images"
 public_folder: "/images"
@@ -11,7 +11,8 @@ collections:
     label: "Projects"
     folder: "_projects"
     create: true
+    slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
       - { label: "Image", name: "image", widget: "image" }
-      - { label: "Description", name: "body", widget: "text" }
