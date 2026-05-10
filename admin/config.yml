@@ -1,19 +1,18 @@
-backend:
-  name: deadxcreation123-dot/Portfolio
-  branch: main
+name: deadxcreation123-dot/Portfolio
+branch: main
 
-media_folder: "public/images/uploads"
+media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
 collections:
   - name: "projects"
     label: "Projects"
-    folder: "content/projects"
+    folder: "projects"
     create: true
     slug: "{{slug}}"
 
     fields:
-      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Project Title", name: "title", widget: "string" }
 
       - { label: "Description", name: "description", widget: "text" }
 
