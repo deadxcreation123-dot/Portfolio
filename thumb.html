@@ -30,4 +30,27 @@
 </section>
 
 </body>
+<script>
+const slug = new URLSearchParams(window.location.search).get("slug");
+
+fetch("/projects.json")
+  .then(res => res.json())
+  .then(data => {
+    const project = data.find(p => p.slug === slug);
+
+    let html = `
+      <h1>${project.title}</h1>
+      <p>${project.short}</p>
+      <div class="gallery">
+    `;
+
+    project.samples.forEach(img => {
+      html += `<img src="${img}" />`;
+    });
+
+    html += `</div>`;
+
+    document.getElementById("project").innerHTML = html;
+  });
+</script>
 </html>
